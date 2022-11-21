@@ -1,0 +1,93 @@
+@use "variables"as v;
+
+.bottom {
+    width: 100%;
+    min-height: 20.875rem;
+    // min-height: 50vh;
+    background-image: url("/images/pattern-quotes.svg");
+    background-size: 4.25rem;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    gap: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and(min-width:1024px) {
+        width: 50%;
+        min-height: 16.875rem;
+        font-size: 1.4rem;
+        position: absolute;
+        right: 42.5%;
+    }
+
+    @media screen and(min-width:1440px) {
+        width: 39.375rem;
+        min-height: 16.875rem;
+        font-size: 1.77rem;
+    }
+
+    &-bgWave {
+        position: absolute;
+        z-index: -1;
+        width: 70%;
+        height: 20%;
+        bottom: 0;
+        left: 0;
+    }
+
+    &-testimonial {
+        font-weight: 300;
+        text-align: center;
+
+
+        @media screen and(min-width:400px) {
+            line-height: 1.4;
+        }
+
+        @media screen and(min-width:1024px) {
+            text-align: left;
+        }
+    }
+
+    &-data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        @media screen and(min-width:1024px) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: left;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        @media screen and(min-width:1400px) {
+            font-size: 1.5rem;
+        }
+
+        &__name {
+            font-weight: 700;
+        }
+
+        &__occupation {
+            font-weight: 500;
+            color: v.$Grayish-Blue;
+
+            @media screen and(min-width:1024px) {
+                font-size: 1.15rem;
+            }
+
+            @media screen and(min-width:1440px) {
+                font-size: 1.35rem;
+            }
+        }
+    }
+}

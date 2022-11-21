@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 767px) {
+  :root {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+html {
+  background-color: white;
+}
+
+svg,
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  color: hsl(240deg, 38%, 20%);
+  font-size: 500;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+.card-wave {
+  display: block;
+  height: 5rem;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+}
+@media screen and (min-width: 1024px) {
+  .card-wave {
+    width: 37.9%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 400px) {
+  .card {
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    min-height: 100vh;
+  }
+}
+
+.top {
+  width: 100%;
+  min-height: 20.875rem;
+  background-image: url("/images/pattern-bg.svg");
+  background-size: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .top {
+    width: 50%;
+    background-size: 30rem;
+    height: 100vh;
+    position: absolute;
+    right: 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .top {
+    background-size: 45rem;
+  }
+}
+.top-image {
+  width: 16rem;
+  height: 15.9375rem;
+  border-radius: 0.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 1024px) {
+  .top-image {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .top-image {
+    width: 33.75rem;
+    height: 33.75rem;
+  }
+}
+.top-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.top-buttons {
+  width: 5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: -1.25rem;
+  margin: 0 auto;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .top-buttons {
+    left: 10%;
+    bottom: -1.5rem;
+    width: 6rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .top-buttons {
+    left: 10%;
+    bottom: -1.75rem;
+    width: 7.1875rem;
+    height: 3.5625rem;
+  }
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: white;
+  position: relative;
+}
+.button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.button:active {
+  background-color: hsl(0deg, 0%, 80%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button:active img {
+  height: 50%;
+}
+.button img {
+  width: auto;
+  height: 60%;
+  display: block;
+}
+
+.bottom {
+  width: 100%;
+  min-height: 20.875rem;
+  background-image: url("/images/pattern-quotes.svg");
+  background-size: 4.25rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 34px;
+  gap: 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .bottom {
+    width: 50%;
+    min-height: 16.875rem;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 42.5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bottom {
+    width: 39.375rem;
+    min-height: 16.875rem;
+    font-size: 1.77rem;
+  }
+}
+.bottom-bgWave {
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+}
+.bottom-testimonial {
+  font-weight: 300;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .bottom-testimonial {
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bottom-testimonial {
+    text-align: left;
+  }
+}
+.bottom-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .bottom-data {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .bottom-data {
+    font-size: 1.5rem;
+  }
+}
+.bottom-data__name {
+  font-weight: 700;
+}
+.bottom-data__occupation {
+  font-weight: 500;
+  color: hsl(240deg, 18%, 77%);
+}
+@media screen and (min-width: 1024px) {
+  .bottom-data__occupation {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bottom-data__occupation {
+    font-size: 1.35rem;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  color: hsla(240deg, 38%, 40%, 0.8);
+}
+footer p {
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: inherit;
+}
+footer p a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
+  color: inherit;
+}
+footer p a:hover {
+  color: hsl(240deg, 38%, 20%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Tanya Sinclair",
+    "img": "tanya",
+    "occupation": "UX Engineer",
+    "alt": "Tanya Sinclair",
+    "testimonialLine1": "I’ve been interested in coding for a while but never taken the jump, until now. ",
+    "testimonialLine2": "I couldn’t recommend this course enough. I’m now in the job of my dreams and so ",
+    "testimonialLine3": "excited about the future. ",
+    "testimonialLine4": ""
+  },
+  {
+    "id": 2,
+    "name": "John Tarkpor",
+    "img": "john",
+    "occupation": "Junior Front-end Developer",
+    "alt": "John Tarkpor",
+    "testimonialLine1": "If you want to lay the best foundation possible I'd recommend taking this course. ",
+    "testimonialLine2": "The depth the instructors go into is incredible. I now feel so confident about ",
+    "testimonialLine3": "starting up as a professional developer.",
+    "testimonialLine4": ""
+  }
+]

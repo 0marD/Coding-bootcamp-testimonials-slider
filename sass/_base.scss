@@ -1,0 +1,51 @@
+@use "variables"as v;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    @media screen and (min-width: 400px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 767px) {
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+    }
+}
+
+
+html {
+    background-color: white;
+}
+
+svg,
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    width: max-content;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+    color: v.$Dark-Blue;
+    font-size: 500;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}

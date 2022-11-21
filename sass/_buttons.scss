@@ -1,0 +1,64 @@
+@use 'variables'as v;
+
+.top-buttons {
+    width: 5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: -1.25rem;
+    margin: 0 auto;
+    z-index: 100;
+    display: flex;
+
+
+    @media screen and(min-width:1024px) {
+        left: 10%;
+        bottom: -1.5rem;
+        width: 6rem;
+        height: 3rem;
+
+    }
+
+    @media screen and(min-width:1400px) {
+        left: 10%;
+        bottom: -1.75rem;
+        width: 7.1875rem;
+        height: 3.5625rem;
+
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    transition: all .3s;
+    background-color: white;
+    position: relative;
+
+
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    &:active {
+        background-color: hsl(0, 0%, 80%);
+        transition: .3s;
+
+        img {
+
+            height: 50%;
+        }
+    }
+
+    img {
+        width: auto;
+        height: 60%;
+        display: block;
+    }
+}
